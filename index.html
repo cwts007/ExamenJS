@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Monedas</h1>
+    </header>
+    <main><input id="inputValue" type="number" placeholder="Ingresa la cantidad en la conversion seleccionada">
+        <select id="currencySelect">
+            <option value="uf">Unidad de fomento (UF)</option>
+            <option value="dolar">Dólar observado</option>
+            <option value="euro">Euro</option>
+            <option value="utm">Unidad Tributaria Mensual (UTM)</option>
+            <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button onclick="convert()">Convertir</button>
+        <p id="outputValue"></p>
+    </main>
+    <footer></footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
