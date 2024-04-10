@@ -3,26 +3,21 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Conversor de Monedas</h1>
-    </header>
-    <main><input id="inputValue" type="number" placeholder="Ingresa la cantidad en la conversion seleccionada">
-        <select id="currencySelect">
-            <option value="uf">Unidad de fomento (UF)</option>
-            <option value="dolar">Dólar observado</option>
+    <h1>Conversor de Monedas</h1>
+    <div id="converter">
+        <input type="number" id="amount" placeholder="Cantidad">
+        <select id="currencies">
+            <option value="dolar">Dólar</option>
             <option value="euro">Euro</option>
-            <option value="utm">Unidad Tributaria Mensual (UTM)</option>
-            <option value="bitcoin">Bitcoin</option>
         </select>
         <button onclick="convert()">Convertir</button>
-        <p id="outputValue"></p>
-    </main>
-    <footer></footer>
-
-
+    </div>
+    <p id="result"></p>
+    <canvas id="chart"></canvas>
     <script src="script.js"></script>
 </body>
 
