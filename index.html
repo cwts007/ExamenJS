@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas - Christopher Thompson</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <h1>Conversor de Monedas</h1>
+    <header>
+        <h1>Conversor de Monedas</h1>
+    </header>
+
     <div id="converter">
         <input type="number" id="amount" placeholder="Cantidad">
         <select id="currencies">
@@ -16,8 +22,12 @@
         </select>
         <button onclick="convert()">Convertir</button>
     </div>
+
     <p id="result"></p>
     <canvas id="chart"></canvas>
+    <footer>
+        <p>Creado por <a href="https://github.com/cwts007" target="_blank">cwts007</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 
